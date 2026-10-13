@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joanna's project pathway, grades 8 to 12 · Joanna 的项目规划（8–12 年级）</title>
+<meta name="description" content="A five-year project plan for Joanna: from a golf-ball robot to a girl-led non-profit that builds low-cost movement-measuring rehab kits.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600&display=swap" rel="stylesheet">
+<style>
+  [data-lang="en"] [lang="zh"] { display: none }
+  [data-lang="zh"] [lang="en"] { display: none }
+
+  :root {
+    --ink: #1d2320;
+    --muted: #5b6460;
+    --rule: #dfe3df;
+    --paper: #fbfaf7;
+    --accent: #2f6b4f;
+    --accent-soft: #eaf2ed;
+    --warn: #8a5a14;
+  }
+  * { box-sizing: border-box }
+  html { -webkit-text-size-adjust: 100% }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 17px/1.65 "Inter", "Noto Sans SC", system-ui, sans-serif;
+  }
+  [lang="zh"] { font-family: "Noto Sans SC", "Inter", sans-serif }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 22px 80px }
+  h1, h2, h3 { font-family: "Source Serif 4", "Noto Serif SC", Georgia, serif; font-weight: 600; line-height: 1.25 }
+  h1 { font-size: 2.1rem; margin: 8px 0 12px }
+  h2 { font-size: 1.5rem; margin: 64px 0 14px; padding-top: 20px; border-top: 1px solid var(--rule) }
+  h3 { font-size: 1.15rem; margin: 28px 0 6px }
+  p { margin: 0 0 14px }
+  a { color: var(--accent) }
+  .kicker { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 }
+  .lede { font-size: 1.08rem; color: var(--ink) }
+  .note { font-size: .92rem; color: var(--muted) }
+
+  #lang {
+    position: fixed; top: 14px; right: 14px; z-index: 10;
+    font: 500 .9rem "Noto Sans SC", "Inter", sans-serif;
+    background: #fff; color: var(--accent); border: 1px solid var(--accent);
+    border-radius: 999px; padding: 6px 16px; cursor: pointer;
+  }
+  #lang:hover { background: var(--accent-soft) }
+
+  .spine {
+    margin: 28px 0 22px; padding: 22px 24px;
+    border-left: 4px solid var(--accent); background: var(--accent-soft);
+    font-family: "Source Serif 4", "Noto Serif SC", Georgia, serif;
+    font-size: 1.32rem; line-height: 1.45;
+  }
+  .spine small { display: block; font: 500 .75rem "Inter", "Noto Sans SC", sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px }
+
+  .reading { border: 1px solid var(--rule); background: #fff; padding: 14px 18px; font-size: .93rem; border-radius: 4px }
+  .reading p:last-child { margin: 0 }
+
+  /* arc */
+  .arc { list-style: none; margin: 18px 0 0; padding: 0; position: relative }
+  .arc::before { content: ""; position: absolute; left: 13px; top: 8px; bottom: 8px; width: 2px; background: var(--rule) }
+  .arc li { position: relative; padding: 0 0 18px 44px }
+  .arc li::before {
+    content: ""; position: absolute; left: 6px; top: 6px; width: 16px; height: 16px;
+    border-radius: 50%; background: #fff; border: 2px solid var(--accent);
+  }
+  .arc li.now::before { background: var(--accent) }
+  .arc li.cap::before { width: 20px; height: 20px; left: 4px; top: 4px; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft) }
+  .arc .g { font-size: .8rem; color: var(--muted); letter-spacing: .04em }
+  .arc .f { display: inline-block; font-size: .72rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--accent); margin-left: 6px }
+  .arc .n { font-family: "Source Serif 4", "Noto Serif SC", Georgia, serif; font-size: 1.12rem; font-weight: 600; display: block }
+  .arc .d { font-size: .93rem; color: var(--muted); display: block }
+  .arc li.light .n { font-weight: 500; color: var(--muted) }
+
+  .badge { display: inline-block; font: 600 .72rem "Inter", "Noto Sans SC", sans-serif; letter-spacing: .06em; text-transform: uppercase; padding: 3px 9px; border-radius: 3px; vertical-align: middle; margin-left: 8px; background: var(--accent); color: #fff }
+
+  .year-head { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--rule) }
+  .year-head h2 { margin: 4px 0 6px; padding: 0; border: 0 }
+  .one-line { font-size: 1.05rem; margin-bottom: 18px }
+  .why { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; margin: 18px 0 }
+  .why strong { color: var(--accent) }
+
+  dl.facts { margin: 14px 0; display: grid; grid-template-columns: 9.5rem 1fr; gap: 10px 18px }
+  dl.facts dt { font-size: .82rem; font-weight: 600; color: var(--muted); letter-spacing: .03em; padding-top: 2px }
+  dl.facts dd { margin: 0 }
+  @media (max-width: 560px) {
+    dl.facts { grid-template-columns: 1fr; gap: 2px }
+    dl.facts dd { margin-bottom: 12px }
+    h1 { font-size: 1.7rem }
+    .spine { font-size: 1.15rem; padding: 18px }
+    main { padding-top: 56px }
+  }
+
+  ul.plain { margin: 6px 0 14px; padding-left: 20px }
+  ul.plain li { margin-bottom: 6px }
+
+  .done { color: var(--muted) }
+  .done b { color: var(--ink); font-weight: 500 }
+  .tag-done, .tag-new { font: 600 .68rem "Inter", "Noto Sans SC", sans-serif; letter-spacing: .05em; text-transform: uppercase; padding: 1px 6px; border-radius: 3px; margin-right: 6px }
+  .tag-done { background: #eceeec; color: var(--muted) }
+  .tag-new { background: var(--accent-soft); color: var(--accent) }
+
+  details { margin: 18px 0; border: 1px solid var(--rule); border-radius: 4px; background: #fff }
+  summary { cursor: pointer; padding: 10px 16px; font-weight: 500; font-size: .95rem }
+  details > div { padding: 2px 18px 14px; font-size: .93rem }
+
+  table { width: 100%; border-collapse: collapse; font-size: .93rem; margin: 10px 0 18px }
+  th, td { text-align: left; vertical-align: top; padding: 9px 10px; border-bottom: 1px solid var(--rule) }
+  th { font-weight: 600; font-size: .8rem; color: var(--muted); letter-spacing: .03em }
+  @media (max-width: 560px) {
+    table, tbody, tr, td { display: block; width: 100% }
+    thead { display: none }
+    tr { border-bottom: 1px solid var(--rule); padding: 8px 0 }
+    td { border: 0; padding: 3px 0 }
+    td:first-child { font-weight: 600 }
+  }
+
+  .caution { border: 1px solid #ead9b8; background: #fbf5e9; padding: 14px 18px; border-radius: 4px; font-size: .95rem }
+  .caution strong { color: var(--warn) }
+  footer { margin-top: 64px; font-size: .85rem; color: var(--muted) }
+</style>
+</head>
+<body>
+<button type="button" id="lang" onclick="
+  var h=document.documentElement; h.dataset.lang = h.dataset.lang==='en' ? 'zh' : 'en';
+  try{localStorage.setItem('lang',h.dataset.lang)}catch(e){}"><span lang="en">中文</span><span lang="zh">English</span></button>
+<script>try{var s=localStorage.getItem('lang'); if(s)document.documentElement.dataset.lang=s}catch(e){}</script>
+
+<main>
+
+<!-- 1. Student and spine -->
+<header>
+  <p class="kicker"><span lang="en">Project pathway · Grades 8 to 12 · Prepared October 2026</span><span lang="zh">项目规划 · 8–12 年级 · 2026 年 10 月</span></p>
+  <h1><span lang="en">Joanna: from a golf-ball robot to a clinic in a box</span><span lang="zh">Joanna：从捡高尔夫球的机器人，到一箱可以带回家的康复工具</span></h1>
+
+  <p class="lede"><span lang="en">Joanna is in 8th grade. She builds robots, and she plays golf seriously. Her current robot already hunts for a golf ball, and she has started a girls' robotics club called SheBots. She is weighing biology, medicine and biomedical engineering, with engineering pulling hardest today.</span><span lang="zh">Joanna 现在读 8 年级。她做机器人，也认真打高尔夫，而且打得不错。她正在做的机器人，目标物就是一颗高尔夫球；她还发起了一个女生机器人社团 SheBots。她在生物、医学和生物医学工程之间考虑，眼下最吸引她的是工程和机器人。</span></p>
+
+  <div class="spine">
+    <small><span lang="en">The spine</span><span lang="zh">主线</span></small>
+    <span lang="en">Joanna builds machines that measure how a body moves: first a golfer's swing, then a patient's recovery, and finally kits that girls she trained build and give to people who need them.</span>
+    <span lang="zh">Joanna 做的是“测量身体如何运动”的机器：先测高尔夫挥杆，再测病人的康复，最后由她带出来的女生们亲手组装这些工具，送到需要的人手里。</span>
+  </div>
+
+  <div class="reading">
+    <p><span lang="en"><b>How we read the brief.</b> The plan runs grade 8 (2026–27) to grade 12 (2030–31). We aimed for biomedical engineering as the lead major, because it keeps her robotics strength and opens toward medicine; biology and pre-med remain supported. The non-profit is in place by 11th grade, as asked. Senior year is deliberately light.</span><span lang="zh"><b>我们对需求的理解。</b>规划覆盖 8 年级（2026–27）到 12 年级（2030–31）。主申专业我们定为生物医学工程：既用上她的机器人特长，又通向医学；生物和医学预科方向同样站得住。按要求，非营利组织在 11 年级成形。12 年级刻意排得很轻。</span></p>
+  </div>
+</header>
+
+<!-- 2. The arc -->
+<section>
+  <h2><span lang="en">The arc</span><span lang="zh">五年一览</span></h2>
+  <ol class="arc">
+    <li class="now">
+      <span class="g"><span lang="en">Grade 8 · 2026–27</span><span lang="zh">8 年级 · 2026–27</span></span><span class="f"><span lang="en">Foundation · under way</span><span lang="zh">打基础 · 进行中</span></span>
+      <span class="n"><span lang="en">The Putting Robot</span><span lang="zh">推杆机器人</span></span>
+      <span class="d"><span lang="en">A robot that finds, fetches and putts a golf ball, tested over 150 measured putts. Regional science fair.</span><span lang="zh">能找球、取球、推杆的机器人，用 150 次实测推杆检验精度。参加地区科学展。</span></span>
+    </li>
+    <li>
+      <span class="g"><span lang="en">Grade 9 · 2027–28</span><span lang="zh">9 年级 · 2027–28</span></span><span class="f"><span lang="en">Research</span><span lang="zh">科研</span></span>
+      <span class="n"><span lang="en">SwingSense</span><span lang="zh">SwingSense 挥杆传感</span></span>
+      <span class="d"><span lang="en">Low-cost wearable sensors that measure the swing movements linked to golfers' back and wrist injuries, checked against the robot. State science fair.</span><span lang="zh">低成本可穿戴传感器，测量与高尔夫腰伤、腕伤相关的挥杆动作，用机器人作为基准校验。参加州科学展。</span></span>
+    </li>
+    <li>
+      <span class="g"><span lang="en">Grade 10 · 2028–29</span><span lang="zh">10 年级 · 2028–29</span></span><span class="f"><span lang="en">Community</span><span lang="zh">社区</span></span>
+      <span class="n"><span lang="en">ReMotion Wrist</span><span lang="zh">ReMotion 腕部康复训练器</span></span>
+      <span class="d"><span lang="en">A 3D-printed wrist rehab trainer and app, built with SheBots and tested with a physical therapist. Technovation Girls, a student journal paper.</span><span lang="zh">与 SheBots 一起做的 3D 打印腕部康复训练器和配套 App，由物理治疗师参与测试。参加 Technovation Girls，投稿学生期刊。</span></span>
+    </li>
+    <li class="cap">
+      <span class="g"><span lang="en">Grade 11 · 2029–30</span><span lang="zh">11 年级 · 2029–30</span></span><span class="f"><span lang="en">Venture · capstone</span><span lang="zh">创立 · 收官之作</span></span>
+      <span class="n"><span lang="en">SheBots Motion Lab</span><span lang="zh">SheBots Motion Lab</span></span>
+      <span class="d"><span lang="en">A girl-led non-profit that teaches robotics by building rehab kits and lending them to people recovering at home.</span><span lang="zh">一个由女生主导的非营利组织：通过组装康复工具教机器人，再把工具借给在家康复的人。</span></span>
+    </li>
+    <li class="light">
+      <span class="g"><span lang="en">Grade 12 · 2030–31</span><span lang="zh">12 年级 · 2030–31</span></span><span class="f"><span lang="en">Handover</span><span lang="zh">交接</span></span>
+      <span class="n"><span lang="en">Hand it on, apply</span><span lang="zh">交棒，专心申请</span></span>
+      <span class="d"><span lang="en">Younger members take over the chapters. Applications come first.</span><span lang="zh">学妹接手各分队，申请放在第一位。</span></span>
+    </li>
+  </ol>
+</section>
+
+<!-- 3. Year by year -->
+
+<!-- Grade 8 -->
+<section>
+  <div class="year-head">
+    <p class="kicker"><span lang="en">Grade 8 · 2026–27 · Foundation</span><span lang="zh">8 年级 · 2026–27 · 打基础</span><span class="badge"><span lang="en">Under way</span><span lang="zh">进行中</span></span></p>
+    <h2><span lang="en">The Putting Robot</span><span lang="zh">推杆机器人</span></h2>
+  </div>
+  <p class="one-line"><span lang="en">A small robot that sees a golf ball, drives to it, picks it up, sets it down, and putts it at a target, then reports how often it gets close.</span><span lang="zh">一台小机器人：看见高尔夫球，开过去，抓起来，放好，再推杆打向目标，最后统计它打得有多准。</span></p>
+
+  <p><span lang="en">This year builds on Joanna's existing proposal, <i>Step into Robotics</i> (November 2025). Nothing in it is replaced. We keep every step and add three things at the end that turn a working demo into the first piece of evidence in her story.</span><span lang="zh">这一年建立在 Joanna 现有的方案《Step into Robotics》（2025 年 11 月）之上，原有内容一项不删。我们保留每一步，只在最后加三件事，把一个能跑的演示变成她故事里的第一份证据。</span></p>
+
+  <h3><span lang="en">Already in the proposal</span><span lang="zh">原方案已有的内容</span></h3>
+  <ul class="plain done">
+    <li><span class="tag-done"><span lang="en">Existing</span><span lang="zh">已有</span></span><span lang="en"><b>Python and Arduino</b>: an L298N-driven two-wheel car.</span><span lang="zh"><b>Python 与 Arduino</b>：L298N 驱动的双轮小车。</span></li>
+    <li><span class="tag-done"><span lang="en">Existing</span><span lang="zh">已有</span></span><span lang="en"><b>Design and printing</b>: TinkerCAD parts, sliced in Bambu Studio, printed on the H2D.</span><span lang="zh"><b>建模与打印</b>：TinkerCAD 建模，Bambu Studio 切片，H2D 打印底盘和支架。</span></li>
+    <li><span class="tag-done"><span lang="en">Existing</span><span lang="zh">已有</span></span><span lang="en"><b>Simulation</b>: her own STL files in Isaac Sim, with the car simulated to "see ball, move closer".</span><span lang="zh"><b>仿真</b>：把自己的 STL 导入 Isaac Sim，仿真小车“看到球、靠近球”。</span></li>
+    <li><span class="tag-done"><span lang="en">Existing</span><span lang="zh">已有</span></span><span lang="en"><b>Vision and grasping</b>: OpenCV golf-ball detection, a printed servo gripper, the loop Recognize → Approach → Grasp → Place.</span><span lang="zh"><b>视觉与抓取</b>：OpenCV 识别高尔夫球，打印舵机抓手，完成“识别 → 接近 → 抓取 → 放置”闭环。</span></li>
+    <li><span class="tag-done"><span lang="en">Existing</span><span lang="zh">已有</span></span><span lang="en"><b>Final goal</b>: hit the ball toward a target. Demo video and report.</span><span lang="zh"><b>最终目标</b>：把球击向目标，完成演示视频和项目报告。</span></li>
+  </ul>
+
+  <h3><span lang="en">What we add</span><span lang="zh">我们新增的内容</span></h3>
+  <ul class="plain">
+    <li><span class="tag-new"><span lang="en">New</span><span lang="zh">新增</span></span><span lang="en"><b>A putting arm with a sensor on it.</b> The gripper hands off to a printed, servo-driven putter arm. An IMU (a motion sensor, the BNO085) rides on the arm and logs its speed at impact. This is her first motion sensor. It is the same part she will strap to a golfer next year.</span><span lang="zh"><b>带传感器的推杆臂。</b>抓手放好球后，交给一支 3D 打印、舵机驱动的推杆臂。推杆臂上装一个 IMU（运动传感器，型号 BNO085），记录击球瞬间的速度。这是她第一次用运动传感器，明年绑在球员身上的正是同一个零件。</span></li>
+    <li><span class="tag-new"><span lang="en">New</span><span lang="zh">新增</span></span><span lang="en"><b>An experiment instead of a demo.</b> 50 putts each at 1, 2 and 3 metres, first in Isaac Sim and then on the real robot. She measures how far each ball stops from the hole and asks one question: <i>how much accuracy is lost between simulation and the real world, and why?</i> That is a science fair project. A video of one good putt is not.</span><span lang="zh"><b>把演示变成实验。</b>在 1 米、2 米、3 米三个距离各推 50 杆，先在 Isaac Sim 里做，再在实物上做。记录每颗球停在离洞多远，回答一个问题：<i>从仿真到现实，精度损失了多少，原因是什么？</i>这才是一个科学展项目；一段推进一杆的视频不是。</span></li>
+    <li><span class="tag-new"><span lang="en">New</span><span lang="zh">新增</span></span><span lang="en"><b>SheBots gets a curriculum.</b> Joanna turns the first half of her own pathway (car, printing, ball detection) into six club sessions. The club needs something to build, and teaching it is the fastest way for her to find what she half-understands.</span><span lang="zh"><b>SheBots 有了课程。</b>Joanna 把自己学习路径的前半段（小车、打印、识别球）整理成 6 次社团活动。社团需要一个实际要做的东西，而去教别人，也是她发现自己哪里没真正弄懂的最快办法。</span></li>
+  </ul>
+
+  <div class="why"><span lang="en"><strong>Why it comes now.</strong> She is already halfway there. What this year adds is the habit that the rest of the plan depends on: measure it, repeat it, compare it. And it leaves her with a machine that can make the same stroke 150 times. Next year, that machine becomes the reference she tests human-worn sensors against.</span><span lang="zh"><strong>为什么是现在。</strong>她已经走了一半。这一年真正加上的，是后面所有项目都依赖的习惯：测量、重复、对比。同时她会留下一台能把同一杆重复 150 次的机器。明年，这台机器就是检验人体佩戴传感器准不准的“标尺”。</span></div>
+
+  <dl class="facts">
+    <dt><span lang="en">She learns</span><span lang="zh">学到的技能</span></dt>
+    <dd><span lang="en">Python, Arduino, OpenCV, CAD and printing, Isaac Sim, reading an IMU, designing a repeatable test, basic statistics (mean, spread, error bars).</span><span lang="zh">Python、Arduino、OpenCV、建模与打印、Isaac Sim、读取 IMU 数据、设计可重复的实验、基础统计（均值、离散度、误差线）。</span></dd>
+    <dt><span lang="en">Deliverables</span><span lang="zh">成果</span></dt>
+    <dd><span lang="en">The working robot; a dataset of 300 putts (150 sim, 150 real); a 2-minute video; a science fair board and report; a six-session SheBots curriculum.</span><span lang="zh">能工作的机器人；300 杆的数据集（仿真 150、实物 150）；2 分钟视频；科学展展板和报告；6 课时的 SheBots 课程。</span></dd>
+    <dt><span lang="en">Outside validation</span><span lang="zh">外部认可</span></dt>
+    <dd><span lang="en">School science fair in winter, then the county or regional fair in early spring (in Los Angeles County this is the LA County Science &amp; Engineering Fair; confirm which fair her school feeds). A realistic outcome is a category placement at regional.</span><span lang="zh">冬季参加校内科学展，初春参加县级或地区科学展（洛杉矶县对应的是 LA County Science &amp; Engineering Fair；请确认她学校对口哪一个）。现实的目标是在地区赛拿到分组名次。</span></dd>
+    <dt><span lang="en">How hard</span><span lang="zh">难度</span></dt>
+    <dd><span lang="en">4 to 5 hours a week. The hard part is the hand-off from gripper to putter: small position errors become big misses. If the real robot cannot putt reliably by February, she reports the sim-to-real gap honestly. That is still a result.</span><span lang="zh">每周 4–5 小时。难点在抓手到推杆的交接：放球位置稍有偏差，推出去就差得很远。如果到 2 月实物还推不稳，就如实报告仿真与现实的差距，这本身也是结论。</span></dd>
+  </dl>
+
+  <details>
+    <summary><span lang="en">Build detail (for the instructor)</span><span lang="zh">搭建细节（给指导老师）</span></summary>
+    <div>
+      <p><span lang="en">Not needed to follow the plan.</span><span lang="zh">不读也不影响理解整体规划。</span></p>
+      <p><span lang="en">Putter arm: one high-torque servo (MG996R class) swinging a printed arm with a short aluminium or printed face; the swing angle sets ball speed. BNO085 on I²C to the Arduino or a Raspberry Pi, logging angular velocity at 100 Hz. Ball distance from hole measured from an overhead phone video, one frame per putt, using the same OpenCV ball detector. In Isaac Sim, match ball mass (45.9 g), friction and arm speed to the real system, then compare distributions rather than single putts.</span><span lang="zh">推杆臂：一个大扭矩舵机（MG996R 级别）带动 3D 打印臂，杆面用短铝片或打印件；摆角决定球速。BNO085 通过 I²C 接 Arduino 或 Raspberry Pi，以 100 Hz 记录角速度。用手机俯拍视频，每杆取一帧，用同一个 OpenCV 识别程序测量球离洞的距离。在 Isaac Sim 中把球的质量（45.9 g）、摩擦和摆臂速度调到与实物一致，然后比较两组数据的分布，而不是比较单杆。</span></p>
+    </div>
+  </details>
+
+  <div class="caution">
+    <p><span lang="en"><strong>One correction to the existing proposal.</strong> It lists MIT PRIMES as a competition target. PRIMES is a year-long research mentoring programme, mainly in mathematics and computer science, for high-school students. It is not a competition and it does not fit a robotics project in 8th grade. We have dropped it. Technovation, also on that list, is kept and moved to grade 10, where it fits.</span><span lang="zh"><strong>对原方案的一处修正。</strong>原方案把 MIT PRIMES 列为竞赛目标。PRIMES 其实是面向高中生、为期一年的科研指导项目，以数学和计算机为主，并不是竞赛，也不适合 8 年级的机器人项目。我们把它删掉了。原列表中的 Technovation 保留，移到更合适的 10 年级。</span></p>
+  </div>
+</section>
+
+<!-- Grade 9 -->
+<section>
+  <div class="year-head">
+    <p class="kicker"><span lang="en">Grade 9 · 2027–28 · Research</span><span lang="zh">9 年级 · 2027–28 · 科研</span></p>
+    <h2><span lang="en">SwingSense</span><span lang="zh">SwingSense 挥杆传感</span></h2>
+  </div>
+  <p class="one-line"><span lang="en">Can three cheap motion sensors and a phone camera measure the parts of a golf swing that are linked to back and wrist injury, accurately enough to be useful?</span><span lang="zh">三个便宜的运动传感器加一部手机，能不能把挥杆中与腰伤、腕伤相关的动作测得足够准，准到真正有用？</span></p>
+
+  <p><span lang="en">Low back pain is the most commonly reported injury among golfers in published surveys, and the lead wrist is close behind. Coaches and researchers measure swings with motion-capture labs that cost tens of thousands of dollars. Joanna asks whether a $60 kit can get close.</span><span lang="zh">在已发表的调查中，下背痛是高尔夫球员最常报告的伤病，前导手手腕紧随其后。教练和研究者通常在动作捕捉实验室里分析挥杆，设备动辄数万美元。Joanna 要回答的是：一套 60 美元的设备能接近到什么程度。</span></p>
+
+  <p><span lang="en">She builds a set of three wireless sensors (lead wrist, chest, pelvis) and pairs them with phone video run through MediaPipe Pose. She measures three things: how far the shoulders turn past the hips (the "X-factor"), how fast the trunk rotates, and how far the lead wrist bends. Then she checks the sensors two ways. First against her putting robot, whose arm angle she knows exactly. Then against slow-motion video of real swings from herself and teammates.</span><span lang="zh">她做一套三个无线传感器（前导手腕、胸口、骨盆），配合手机视频和 MediaPipe Pose 姿态识别。测三个量：肩部比髋部多转了多少（所谓 “X-factor”）、躯干旋转多快、前导手腕弯曲多大。然后用两种方式校验：先对照推杆机器人，它的摆臂角度是精确已知的；再对照她本人和队友真实挥杆的慢动作视频。</span></p>
+
+  <div class="why"><span lang="en"><strong>Why it comes now.</strong> Without last year's robot she has no ground truth, and without ground truth this is a gadget, not a study. The IMU she learned on the putter arm is the same chip. This year also moves her from machines to bodies, the first step toward biomedical work. And it produces the measurement pipeline that next year's rehab device runs on.</span><span lang="zh"><strong>为什么是现在。</strong>没有去年的机器人，她就没有“标准答案”；没有标准答案，这只是个小玩意，算不上研究。她在推杆臂上用过的 IMU 就是同一颗芯片。这一年也让她从“测机器”走到“测人体”，迈出生物医学方向的第一步。它留下的测量流程，正是明年康复设备要用的。</span></div>
+
+  <dl class="facts">
+    <dt><span lang="en">She learns</span><span lang="zh">学到的技能</span></dt>
+    <dd><span lang="en">ESP32 and Bluetooth, sensor fusion and calibration, MediaPipe pose estimation, Python data analysis (pandas, matplotlib), Bland–Altman agreement analysis, how to run a study on people ethically, basic biomechanics.</span><span lang="zh">ESP32 与蓝牙、传感器融合与校准、MediaPipe 姿态估计、Python 数据分析（pandas、matplotlib）、Bland–Altman 一致性分析、如何合乎伦理地开展人体研究、基础生物力学。</span></dd>
+    <dt><span lang="en">Deliverables</span><span lang="zh">成果</span></dt>
+    <dd><span lang="en">Three-sensor kit with printed housings; open-source code on GitHub; a dataset of roughly 200 swings from 10 to 12 golfers; a written research paper; a fair board.</span><span lang="zh">带 3D 打印外壳的三传感器套件；GitHub 开源代码；来自 10–12 名球员、约 200 次挥杆的数据集；一篇研究论文；科学展展板。</span></dd>
+    <dt><span lang="en">Outside validation</span><span lang="zh">外部认可</span></dt>
+    <dd><span lang="en">Regional fair in early spring, then the state fair if she qualifies (in California, the California Science &amp; Engineering Fair, usually in April). Qualifying for Regeneron ISEF is possible but should not be expected in 9th grade. The brief names Dr. Tang's robotics lab at Cal Poly Pomona; we have not been able to confirm it. If it is real and open to younger students, this paper is what she would bring to ask for a summer place.</span><span lang="zh">初春参加地区科学展，晋级后参加州赛（加州为 California Science &amp; Engineering Fair，通常在 4 月）。晋级 Regeneron ISEF 有可能，但 9 年级不应抱这个预期。需求中提到 Cal Poly Pomona 的 Dr. Tang 机器人实验室，我们无法核实；如果确有此实验室且接收低年级学生，这篇论文就是她申请暑期机会的敲门砖。</span></dd>
+    <dt><span lang="en">How hard</span><span lang="zh">难度</span></dt>
+    <dd><span lang="en">6 to 8 hours a week, more during data collection. The hard part is the human-subjects paperwork: science fairs require approval from a review board <i>before</i> any data is collected from people, including teammates. Start that in September. Second risk: wrist sensors drift during a fast swing. If wrist data stays unreliable, she drops the wrist and reports the trunk alone.</span><span lang="zh">每周 6–8 小时，采集数据期间更多。难点是人体研究的审批：科学展要求在采集任何人的数据之前（包括队友）先获得审查委员会批准，9 月就要开始办。第二个风险是快速挥杆时腕部传感器漂移；如果腕部数据始终不可靠，就放弃腕部，只报告躯干结果。</span></dd>
+  </dl>
+</section>
+
+<!-- Grade 10 -->
+<section>
+  <div class="year-head">
+    <p class="kicker"><span lang="en">Grade 10 · 2028–29 · Community</span><span lang="zh">10 年级 · 2028–29 · 社区</span></p>
+    <h2><span lang="en">ReMotion Wrist</span><span lang="zh">ReMotion 腕部康复训练器</span></h2>
+  </div>
+  <p class="one-line"><span lang="en">A 3D-printed handle with a motion sensor inside, and a tablet app that turns daily wrist exercises into a game and records range of motion so a therapist can see progress between visits.</span><span lang="zh">一个内置运动传感器的 3D 打印手柄，配一个平板 App：把每天的手腕康复练习变成小游戏，并记录关节活动度，让治疗师在两次复诊之间也能看到进展。</span></p>
+
+  <p><span lang="en">This is the year the story turns from golf to medicine. A broken wrist is one of the most common fractures, and recovery depends on months of repetitive exercises at home that many people stop doing. Joanna already knows how to measure a wrist from SwingSense. Now the question is who that helps.</span><span lang="zh">这一年，故事从高尔夫转向医学。腕部骨折是最常见的骨折之一，康复要靠回家后几个月重复枯燥的练习，很多人练着练着就放弃了。Joanna 在 SwingSense 中已经学会怎样测量手腕；现在的问题是：这能帮到谁。</span></p>
+
+  <p><span lang="en">She builds it with a team of three or four SheBots members, who enter it together in Technovation Girls, a real programme where girls build an app and a business plan. She asks a local physical therapist to advise. The therapist does not need to be a researcher; a clinic willing to give feedback is enough. Accuracy is tested on healthy volunteers against a standard goniometer. Patients use it only if a clinician chooses to try it, under their care.</span><span lang="zh">她和三四名 SheBots 成员组队来做，并以团队名义参加 Technovation Girls，这是一个真实存在的项目，女生团队要做出 App 和商业计划。她会请一位本地物理治疗师担任顾问，对方不必是研究者，愿意给反馈的诊所就够了。精度在健康志愿者身上测试，以标准量角器作对照；只有临床医生自己决定试用时，病人才会在其指导下使用。</span></p>
+
+  <div class="why"><span lang="en"><strong>Why it comes now.</strong> The sensors, the calibration method and the analysis code all come from SwingSense; without them this would be a two-year project. SheBots has run for two years by now, so there are members ready to build something real. And this year produces what the non-profit will need on its first day: a device, a design that girls can assemble, and a clinician who knows her.</span><span lang="zh"><strong>为什么是现在。</strong>传感器、校准方法和分析代码全部来自 SwingSense，没有它们这就得是个两年的项目。到这时 SheBots 已经运行两年，有成员能做真东西了。这一年还为非营利组织准备好开张第一天需要的一切：一件设备、一套女生们能组装的设计，以及一位认识她的临床人士。</span></div>
+
+  <dl class="facts">
+    <dt><span lang="en">She learns</span><span lang="zh">学到的技能</span></dt>
+    <dd><span lang="en">Designing for a user who is not her; app development (Flutter or MIT App Inventor, matching Technovation's rules); interviewing clinicians; leading a team; writing for a journal; the basics of what makes something a medical device (and how to stay clearly on the "training tool" side).</span><span lang="zh">为不是自己的用户做设计；App 开发（Flutter 或 MIT App Inventor，以 Technovation 规则为准）；访谈临床人员；带团队；按期刊要求写作；了解什么算医疗器械，以及如何明确停留在“训练工具”的范围内。</span></dd>
+    <dt><span lang="en">Deliverables</span><span lang="zh">成果</span></dt>
+    <dd><span lang="en">A working trainer plus five assembled copies; a published build guide; the app; a Technovation submission; the SwingSense study submitted to the Journal of Emerging Investigators, a peer-reviewed journal for middle and high school students.</span><span lang="zh">一台可用的训练器外加 5 套组装好的副本；公开的组装指南；App；Technovation 参赛作品；把 SwingSense 研究投稿到 Journal of Emerging Investigators（面向初高中生的同行评审期刊）。</span></dd>
+    <dt><span lang="en">Outside validation</span><span lang="zh">外部认可</span></dt>
+    <dd><span lang="en">Technovation Girls (season runs through the school year, submissions in spring; confirm current dates). State science fair again with ReMotion accuracy data. Summer after grade 10: a university research placement, at Dr. Tang's lab if confirmed, otherwise a biomedical engineering or rehabilitation lab that takes high-school students. A realistic Technovation outcome is a strong regional score; finalist is a stretch.</span><span lang="zh">Technovation Girls（赛季贯穿学年，春季提交，请核实当年日期）。带着 ReMotion 的精度数据再次参加州科学展。10 年级暑假：争取一个大学科研实习，若 Dr. Tang 实验室能确认就去那里，否则找接收高中生的生物医学工程或康复实验室。Technovation 现实的目标是区域高分，进入决赛属于冲刺。</span></dd>
+    <dt><span lang="en">How hard</span><span lang="zh">难度</span></dt>
+    <dd><span lang="en">6 to 8 hours a week, with a team. The hard part is people: finding a therapist willing to engage, and keeping teammates moving. Approach three or four clinics in the autumn; one yes is enough.</span><span lang="zh">每周 6–8 小时，有团队分担。难点在人：找到愿意参与的治疗师，以及让队友持续投入。秋季联系三四家诊所，有一家答应就够了。</span></dd>
+  </dl>
+</section>
+
+<!-- Grade 11 -->
+<section>
+  <div class="year-head">
+    <p class="kicker"><span lang="en">Grade 11 · 2029–30 · Venture</span><span lang="zh">11 年级 · 2029–30 · 创立</span></p>
+    <h2><span lang="en">SheBots Motion Lab</span><span lang="zh">SheBots Motion Lab</span></h2>
+  </div>
+  <p class="one-line"><span lang="en">The club, the research and the device merge into one organisation. Details in the capstone section below.</span><span lang="zh">社团、研究和设备合并成一个组织，详见下方“收官之作”。</span></p>
+  <div class="why"><span lang="en"><strong>Why it comes now.</strong> Every part already exists. What is new is structure: a name, a fiscal home, partners and a second chapter. Doing this in 11th grade, not 12th, means it has a full year of record before applications go out.</span><span lang="zh"><strong>为什么是现在。</strong>每一块都已经在了，新增的只是组织架构：名字、财务托管、合作方和第二个分队。放在 11 年级而不是 12 年级，是为了在递交申请前积累一整年的真实记录。</span></div>
+  <dl class="facts">
+    <dt><span lang="en">How hard</span><span lang="zh">难度</span></dt>
+    <dd><span lang="en">8 to 10 hours a week in the autumn, easing to 5 in spring when AP exams and the SAT or ACT take priority. The heaviest building is finished by now on purpose.</span><span lang="zh">秋季每周 8–10 小时，春季因 AP 考试和 SAT/ACT 降到 5 小时左右。最重的动手工作有意安排在此之前完成。</span></dd>
+  </dl>
+</section>
+
+<!-- Grade 12 -->
+<section>
+  <div class="year-head">
+    <p class="kicker"><span lang="en">Grade 12 · 2030–31 · Handover</span><span lang="zh">12 年级 · 2030–31 · 交接</span></p>
+    <h2><span lang="en">Hand it on</span><span lang="zh">交棒</span></h2>
+  </div>
+  <p><span lang="en">No new project. Applications, grades and golf come first. Joanna trains two younger members to run the chapters and the kit-building, so the organisation outlives her time at school. That handover is itself the strongest proof it was real. 2 to 3 hours a week.</span><span lang="zh">不再开新项目。申请、成绩和高尔夫放在首位。Joanna 培养两名学妹接手分队和组装工作，让组织在她毕业后继续运转。这次交接本身就是组织真实存在的最有力证明。每周 2–3 小时。</span></p>
+</section>
+
+<!-- 4. Capstone -->
+<section>
+  <h2><span lang="en">The capstone: SheBots Motion Lab</span><span lang="zh">收官之作：SheBots Motion Lab</span></h2>
+
+  <p><span lang="en"><b>What it is.</b> A girl-led non-profit with two halves that feed each other. Girls aged 11 to 16 learn robotics by building ReMotion wrist trainers in club sessions. The finished trainers are lent, free, through partner physical therapy clinics to patients recovering at home, and returned for the next person.</span><span lang="zh"><b>它是什么。</b>一个由女生主导的非营利组织，两部分相互支撑：11–16 岁的女生在社团活动中通过组装 ReMotion 腕部训练器学习机器人；做好的训练器经合作的物理治疗诊所，免费借给在家康复的病人，用完归还，再借给下一位。</span></p>
+
+  <p><span lang="en"><b>Who it serves.</b> Two groups: girls who would not otherwise touch a soldering iron, and patients whose recovery happens mostly at home, alone.</span><span lang="zh"><b>服务谁。</b>两类人：原本不会接触电烙铁的女生，以及大部分康复时间都独自在家的病人。</span></p>
+
+  <h3><span lang="en">What it has on day one, because of years 1 to 3</span><span lang="zh">开张第一天就有的东西（来自前三年）</span></h3>
+  <table>
+    <thead><tr><th><span lang="en">Asset</span><span lang="zh">资产</span></th><th><span lang="en">Came from</span><span lang="zh">来源</span></th></tr></thead>
+    <tbody>
+      <tr><td><span lang="en">A tested device and build guide</span><span lang="zh">经过测试的设备和组装指南</span></td><td><span lang="en">ReMotion Wrist, grade 10</span><span lang="zh">ReMotion，10 年级</span></td></tr>
+      <tr><td><span lang="en">Accuracy evidence and a submitted paper</span><span lang="zh">精度证据和已投稿论文</span></td><td><span lang="en">SwingSense, grade 9, and ReMotion testing</span><span lang="zh">SwingSense（9 年级）及 ReMotion 测试</span></td></tr>
+      <tr><td><span lang="en">A teaching curriculum and trained members</span><span lang="zh">课程体系和受过训练的成员</span></td><td><span lang="en">SheBots, running since grade 8</span><span lang="zh">SheBots，8 年级起运行</span></td></tr>
+      <tr><td><span lang="en">Five trainers ready to lend</span><span lang="zh">5 台可出借的训练器</span></td><td><span lang="en">Grade 10 team build</span><span lang="zh">10 年级团队组装</span></td></tr>
+      <tr><td><span lang="en">One clinician who has already given feedback</span><span lang="zh">一位已经提供过反馈的临床人士</span></td><td><span lang="en">Grade 10 advisor</span><span lang="zh">10 年级的顾问</span></td></tr>
+    </tbody>
+  </table>
+
+  <h3><span lang="en">What it needs to be real</span><span lang="zh">要成为真正的组织，还需要什么</span></h3>
+  <p><span lang="en"><b>A fiscal home, not a 501(c)(3) at first.</b> A 16-year-old filing for tax-exempt status is slow and, in most states, needs adult directors. A fiscal sponsor lets her accept donations legally from week one. Hack Club's fiscal sponsorship for teen-led projects is one option to check; a local community foundation is another. Formal 501(c)(3) registration can follow if the organisation is still growing in grade 12.</span><span lang="zh"><b>先找财务托管，而不是一开始就注册 501(c)(3)。</b>16 岁的学生申请免税资格既慢，而且在大多数州需要成年人担任董事。通过财务托管方，她从第一周起就能合法接受捐款。Hack Club 为青少年项目提供的财务托管是可以核实的一个选择，本地社区基金会是另一个。如果到 12 年级组织仍在发展，再正式注册 501(c)(3)。</span></p>
+  <p><span lang="en"><b>Partners.</b> Two physical therapy clinics that lend the trainers; one school or library that hosts a second SheBots chapter. <b>Advisors.</b> A clinician, an engineer (the lab mentor, if that placement happens), and a parent or teacher who handles anything a minor cannot sign. <b>Targets for the year:</b> two chapters, 25 girls trained, 20 trainers built, 30 loans completed. These are goals, not forecasts.</span><span lang="zh"><b>合作方。</b>两家负责出借训练器的物理治疗诊所；一所学校或图书馆承办 SheBots 第二分队。<b>顾问。</b>一位临床人士、一位工程师（如果实验室实习成行，可由导师担任），以及一位负责未成年人不能签署事项的家长或老师。<b>年度目标：</b>两个分队、培训 25 名女生、组装 20 台训练器、完成 30 次出借。这些是目标，不是预测。</span></p>
+  <p><span lang="en"><b>Validation this year.</b> The Conrad Challenge (an innovation competition for ages 13 to 18 with a health category) fits the organisation and device together. The Congressional App Challenge is open to the ReMotion app. Local press and a talk at a school board or Rotary meeting count for more than one would think.</span><span lang="zh"><b>这一年的外部认可。</b>Conrad Challenge（面向 13–18 岁的创新竞赛，设有健康类别）可以把组织和设备一起报。ReMotion App 可以参加 Congressional App Challenge。地方媒体报道、在学区董事会或扶轮社的分享，作用往往比想象中大。</span></p>
+</section>
+
+<!-- 5. Admissions -->
+<section>
+  <h2><span lang="en">What an admissions reader sees</span><span lang="zh">招生官会看到什么</span></h2>
+  <p class="lede"><span lang="en"><b>The story in one sentence:</b> a golfer who built a robot to putt, used it to test sensors that measure swings, turned that into a rehab tool, and then taught other girls to build it for patients.</span><span lang="zh"><b>一句话的故事：</b>一个打高尔夫的女生，先造了会推杆的机器人，再用它校验测量挥杆的传感器，又把传感器做成康复工具，最后教其他女生为病人组装它。</span></p>
+  <p><span lang="en"><b>Strongest evidence.</b> The SwingSense paper, because it shows she can ask a question and check her own answer. Then the handover in grade 12, because it shows the organisation did not depend on her alone.</span><span lang="zh"><b>最有力的证据。</b>SwingSense 论文，因为它证明她能提出问题并检验自己的答案；其次是 12 年级的交接，它证明组织不靠她一个人撑着。</span></p>
+  <p><span lang="en"><b>Majors it supports.</b> Biomedical engineering most directly; mechanical engineering and robotics; kinesiology. Pre-med is supported through the clinical partnership.</span><span lang="zh"><b>支撑的专业。</b>最直接的是生物医学工程；其次是机械工程与机器人、运动机能学。通过与临床的合作，医学预科方向也站得住。</span></p>
+  <p><span lang="en"><b>What it does not prove.</b> Any wet-lab biology: there is no cell, gene or tissue work here. If she moves toward pure biology, she needs a biology course or summer programme to show it. It also does not prove clinical benefit. The trainer is tested for accuracy and usability, not for whether patients recover faster, and the page should never claim otherwise.</span><span lang="zh"><b>它证明不了什么。</b>湿实验生物学：这里没有细胞、基因或组织层面的工作。如果她转向纯生物方向，需要用生物课程或暑期项目来补上。它也证明不了临床疗效：训练器测的是精度和易用性，而不是病人是否恢复得更快，任何材料都不应这样宣称。</span></p>
+</section>
+
+<!-- 6. Risks -->
+<section>
+  <h2><span lang="en">What has to be true</span><span lang="zh">前提与风险</span></h2>
+  <table>
+    <thead><tr><th><span lang="en">If…</span><span lang="zh">如果……</span></th><th><span lang="en">Then…</span><span lang="zh">那么……</span></th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span lang="en">She loses interest in golf</span><span lang="zh">她对高尔夫失去兴趣</span></td>
+        <td><span lang="en">The spine is movement, not golf. Golf carries years 1 and 2; from year 3 it is about patients. Little changes.</span><span lang="zh">主线是“运动测量”，不是高尔夫。高尔夫只承载前两年，第三年起就转向病人了，影响不大。</span></td>
+      </tr>
+      <tr>
+        <td><span lang="en">She moves firmly toward biology or medicine</span><span lang="zh">她坚定转向生物或医学</span></td>
+        <td><span lang="en">Years 3 and 4 already lean clinical. Swap the summer lab placement for a rehabilitation or physiology lab and add a biology-heavy course load.</span><span lang="zh">第三、四年本来就偏临床。把暑期实验室换成康复或生理学方向，并加重生物类课程。</span></td>
+      </tr>
+      <tr>
+        <td><span lang="en">The putting robot never putts reliably</span><span lang="zh">推杆机器人始终推不准</span></td>
+        <td><span lang="en">The arm angle is still known exactly, which is all SwingSense needs from it. Report the miss honestly.</span><span lang="zh">摆臂角度依然精确已知，SwingSense 需要的只是这一点。如实报告误差即可。</span></td>
+      </tr>
+      <tr>
+        <td><span lang="en">Human-subjects approval is slow</span><span lang="zh">人体研究审批进展慢</span></td>
+        <td><span lang="en">Start paperwork in September of grade 9. Robot-only validation can proceed meanwhile.</span><span lang="zh">9 年级 9 月就开始办手续，期间先做只用机器人的校验。</span></td>
+      </tr>
+      <tr>
+        <td><span lang="en">Dr. Tang's lab cannot be confirmed or will not take her</span><span lang="zh">Dr. Tang 实验室无法核实或不接收</span></td>
+        <td><span lang="en">Nothing in the plan depends on it. Apply to other university labs with the SwingSense paper in hand.</span><span lang="zh">规划中没有任何一环依赖它。拿着 SwingSense 论文去申请其他大学实验室。</span></td>
+      </tr>
+      <tr>
+        <td><span lang="en">No clinic will partner</span><span lang="zh">找不到合作诊所</span></td>
+        <td><span lang="en">Lend through a senior centre or a school athletic trainer instead. The device and teaching half still stand.</span><span lang="zh">改为通过老年中心或学校运动防护师出借，设备和教学这两部分依然成立。</span></td>
+      </tr>
+      <tr>
+        <td><span lang="en">SheBots shrinks</span><span lang="zh">SheBots 人数减少</span></td>
+        <td><span lang="en">A small club that ships real kits beats a large one that does not. Keep the grade 10 team core; recruit through the build, not flyers.</span><span lang="zh">能交付真实套件的小社团，胜过什么都做不出来的大社团。守住 10 年级的核心团队，靠实际项目招人，而不是靠传单。</span></td>
+      </tr>
+      <tr>
+        <td><span lang="en">Time runs out</span><span lang="zh">时间不够</span></td>
+        <td><span lang="en">The heaviest work sits in grades 9 and 10. If grades slip, cut the Technovation entry first; it is the most replaceable piece.</span><span lang="zh">最重的工作放在 9、10 年级。如果成绩下滑，先砍掉 Technovation，它是最容易替代的一环。</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="note"><span lang="en">Competition names and dates above are as we understand them in October 2026. Confirm each one's eligibility and deadline at the start of the year it is used.</span><span lang="zh">以上竞赛名称和时间是截至 2026 年 10 月我们所了解的情况。每一项在使用当年年初都需重新核实参赛资格和截止日期。</span></p>
+</section>
+
+<footer>
+  <p><span lang="en">Prepared for Joanna and her family. Built on her November 2025 proposal, <i>Step into Robotics</i>.</span><span lang="zh">为 Joanna 及家人准备。以她 2025 年 11 月的方案《Step into Robotics》为基础。</span></p>
+</footer>
+
+</main>
+</body>
+</html>
